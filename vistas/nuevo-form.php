@@ -9,8 +9,8 @@
 <body>  
     <div class="d-flex align-self-center justify-content-center mt-5 border">
         <form method="POST" action="http://localhost/CrudSimple/">
-            <label for="nombre">Nombre</label> <input type="text" name="nombre">
-            <label for="lenguaje">Lenguaje</label> <input type="text" name="lenguaje">
+            <label for="nombre">Nombre</label> <input type="text" name="nombre" required>
+            <label for="lenguaje">Lenguaje</label> <input type="text" name="lenguaje" required>
             <button type="submit">Enviar</button>
         </form>
     </div>
