@@ -12,7 +12,8 @@ class registro{
         function pullData(){
             $sttm = $this->conexion->prepare("SELECT lenguajes.id_lengua, lenguajes.nombre, paises.nombrePais, paises.id_pais
             FROM lenguajes
-            INNER JOIN paises ON lenguajes.id_lengua = paises.id_lengua;");
+            INNER JOIN paises ON lenguajes.id_lengua = paises.id_lengua 
+            ORDER BY id_lengua;");
 
             $sttm->execute(); 
             $resutado = $sttm->fetchAll();      
